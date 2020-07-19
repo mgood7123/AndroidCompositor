@@ -12,7 +12,8 @@ public:
             init_eglCreateWindowSurface = false,
             init_eglCreatePbufferSurface = false,
             init_eglCreateContext = false,
-            init_eglMakeCurrent = false;
+            init_eglMakeCurrent = false,
+            init_debug = false;
     const GLint
             *configuration_attributes = nullptr,
             *context_attributes = nullptr,
@@ -27,6 +28,8 @@ public:
     EGLContext
             context = EGL_NO_CONTEXT,
             shared_context = EGL_NO_CONTEXT;
+    Magnum::Platform::GLContext * contextMagnum = nullptr;
+    bool debug_context = false;
     EGLSurface surface = EGL_NO_SURFACE;
     // previously: ANativeWindow *native_window = nullptr;
     EGLNativeWindowType native_window = 0;

@@ -69,13 +69,13 @@ int COMPOSITORMAIN__() {
         const_cast<char *>(std::string(
             std::string(executableDir) + "/Arch/arm64-v8a/DefaultFramebuffer").c_str());
     char *args1[2] = {exe, 0};
-    glis.GLIS_FORK(exe, args1);
+//    glis.GLIS_FORK(exe, args1);
 
     char *exe2 =
         const_cast<char *>(std::string(
             std::string(executableDir) + "/Arch/arm64-v8a/MovingWindowsB").c_str());
     char *args2[2] = {exe2, 0};
-    glis.GLIS_FORK(exe2, args2);
+//    glis.GLIS_FORK(exe2, args2);
 
     GLIS_COMPOSITOR_BEFORE_REQUEST_STARTUP(glis);
     GLIS_COMPOSITOR_HANDLE_STARTUP_REQUEST(glis);
