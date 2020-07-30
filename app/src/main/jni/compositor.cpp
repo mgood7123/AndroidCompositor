@@ -59,6 +59,11 @@ GLIS_COMPOSITOR_LOOP_FUNCTION(loop, glis, CompositorMain, font, fps, render, res
 [22:30] <emersion> 3. server receives it and imports it via OpenGL
 [22:31] <emersion> 4. server composites the client using OpenGL, e.glis. on a buffer allocated via GBM
 [22:31] <emersion> 5. server uses DRM to display the GBM buffer
+
+
+
+ /home/smallville7123/logs/freenode_##opengl.log
+ [Sunday, 19 July 2020] [2:16:07 PM AEST] <chrisf>	[my team owns the graphics infrastructure in android; if we have a bug on our side im very interested]
  */
 
 int COMPOSITORMAIN__() {
