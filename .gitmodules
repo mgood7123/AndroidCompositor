@@ -1,3 +1,6 @@
 [submodule "app/src/main/jni/GLIS"]
 	path = app/src/main/jni/GLIS
 	url = https://github.com/mgood7123/GLIS
+[submodule "WinAPI"]
+	path = WinAPI
+	url = https://github.com/mgood7123/WinAPI
